@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    padding: 19px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu li:hover {
+    background: #2c2727;
+    border-radius: 5px;
+  }
+  .menu a:hover {
+    color: blue;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+    }
+  
+    .menu.active li {
+      margin: 10px;
+    }
+  }
+  .dropdown{
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover{
+    color: #fff;
+    background-color: #00A4BD;
+
+  }
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-style: italic;
+  color: orangered;
+  position: sticky;
+  text-align: center;
+}
+  
+
+
+
+ 
